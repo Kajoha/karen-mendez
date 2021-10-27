@@ -1,0 +1,74 @@
+a {
+  text-decoration: none ;
+  font-size: 1.2rem;
+  @media (min-width: 80rem) {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  margin: 0;
+  color: $black;
+}
+
+html {
+  font-size: 10px;
+  font-family: $main-typo;
+  color: $black;
+  margin: 0;
+}
+
+h1 {
+  font-size: $typo-l;
+  @media (min-width: 60rem) {
+    font-size: $typo-xxl;
+  }
+}
+
+h2 {
+  font-size: $typo-l;
+  @media (min-width: 80rem) {
+    font-size: $typo-xl;
+  }
+}
+
+h3 {
+  font-size: $typo-m;
+  @media (min-width: 80rem) {
+    font-size: $typo-l;
+  }
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.7;
+  text-align: justify;
+  font-size: $typo-s;
+  @media (min-width: 80rem) {
+    font-size: $typo-m;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  @media (min-width: 120rem) {
+    width: 130rem;
+  } 
+}
+
+.display-column-row60 {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 60rem) {
+     flex-direction: row;
+    }
+}
