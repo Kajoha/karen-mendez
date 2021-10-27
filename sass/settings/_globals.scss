@@ -70,5 +70,12 @@ li{
   flex-direction: column;
   @media (min-width: 60rem) {
      flex-direction: row;
-    }
+  }
+}
+
+.grid-top {
+  margin-top: 3rem;
+  @media (min-width: 60rem) {
+    margin-top: 6rem;
+  }
 }

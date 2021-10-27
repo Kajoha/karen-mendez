@@ -1,5 +1,5 @@
 .header {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,13 +17,16 @@
 .header__nav {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  
+  @media (min-width: 60rem) {
+    gap: 2rem;
+  }
     
   li {
     box-sizing: border-box;
     display: inline-block;
     list-style: outside none none;
-    margin: .5rem 1rem;
+    margin: .5rem .5rem;
     padding: .5rem;
     transform: translate(-50%, -50%);
     transition: all .35s ease;
