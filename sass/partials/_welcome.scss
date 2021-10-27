@@ -1,0 +1,38 @@
+.welcome {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    display: flex;
+    @media (min-width: 40rem) {
+        flex-direction: row;
+    }
+}
+
+.welcome__description {
+    
+    img {
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        @media (min-width: 40rem) {
+            height: 50rem;
+        }
+    }
+}
+
+.welcome__name {
+    @media (min-width: 40rem) {
+        writing-mode: vertical-lr;
+    }
+}
+
+.welcome__share {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    @media (min-width: 40rem) {
+        flex-direction: column;
+    }
+}
