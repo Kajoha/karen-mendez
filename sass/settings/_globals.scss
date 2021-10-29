@@ -79,3 +79,21 @@ li{
     margin-top: 6rem;
   }
 }
+
+.title__positions {
+  position: relative;
+}
+
+.title__span {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  position: absolute;
+  z-index: -1;
+  margin-top: 1rem;
+  margin-left: 1.8rem;
+  
+  @media (min-width: 60rem) {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+}
