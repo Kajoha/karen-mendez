@@ -65,9 +65,10 @@ li{
   } 
 }
 
-.display-column-row60 {
+.display-col-row60 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media (min-width: 60rem) {
      flex-direction: row;
   }
@@ -95,5 +96,12 @@ li{
   @media (min-width: 60rem) {
     margin-top: 2rem;
     margin-left: 3rem;
+  }
+}
+
+.none {
+  display: none;
+  @media (min-width: 60rem) {
+   display: inline-block;
   }
 }
