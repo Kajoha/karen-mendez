@@ -3,12 +3,13 @@
     flex-direction: column-reverse;
     align-items: center;
     display: flex;
+    padding-top: 7rem;
     @media (min-width: 40rem) {
         flex-direction: row;
     }
 }
 
-.welcome__description {
+.img {
     
     img {
         margin: 0 auto;
@@ -22,6 +23,11 @@
 
 .welcome__name {
     @media (min-width: 40rem) {
+        align-self: flex-end;
+        p {
+            color: $blue-main;
+        }
+        padding-bottom: 2rem;
         writing-mode: vertical-lr;
     }
 }
@@ -36,3 +42,4 @@
         flex-direction: column;
     }
 }
+

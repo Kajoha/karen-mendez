@@ -16,6 +16,20 @@ html {
   font-family: $main-typo;
   color: $black;
   margin: 0;
+  scroll-behavior: smooth;
+  background-image: url("./../../img/backgroup.svg");
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: .7rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: $blue-secondary;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $white;
+  border-radius: 1rem;
 }
 
 h1 {
@@ -56,6 +70,11 @@ li{
   list-style: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -69,14 +88,14 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
      flex-direction: row;
   }
 }
 
 .grid-top {
   margin-top: 3rem;
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
     margin-top: 6rem;
   }
 }
@@ -104,4 +123,29 @@ li{
   @media (min-width: 60rem) {
    display: inline-block;
   }
+}
+
+.clear{
+  margin-top: 45rem;
+  @media (min-width: 30rem) {
+    margin-top: 35rem;
+   }
+  @media (min-width: 60rem) {
+    margin-top: 45rem;
+   }
+  @media (min-width: 70rem) {
+    margin-top: 60rem;
+  }
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.5);
+    }
 }

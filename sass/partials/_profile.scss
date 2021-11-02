@@ -1,0 +1,29 @@
+.profile {
+    padding-top: 4rem;
+   @media (min-width: 40rem) {
+        gap: 4rem;
+        align-items: flex-start;
+    }
+}
+
+.profile__img {
+    width: 70%;
+    @media (min-width: 40rem) {
+        top: 0;
+        position: sticky;
+        width: 40%;
+    }
+}
+
+.profile__content {
+ 
+    @media (min-width: 40rem) {
+        width: 50%;
+    }
+}
+
+.content__title {
+    font-size: $typo-m;
+    text-transform: uppercase;
+    font-weight: 900;
+}

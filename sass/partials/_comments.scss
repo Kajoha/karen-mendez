@@ -5,13 +5,12 @@
     background-color: $blue-secondary;
     padding: 2rem;
     position: absolute;
-    width: 100%;
     z-index: -5;
 }
 
 .comments__title {
     position: relative;
-    @media (min-width: 60rem) {
+    @media (min-width: 50rem) {
         width: 50%;
      }
 }

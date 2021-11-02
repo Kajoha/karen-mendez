@@ -11,31 +11,34 @@
 </head>
 
 <body>
-    <header class="header wrapper">
-        <img class="header__img" src="./img/icon.svg"
-            alt="Logo de la marca enka creative, una luna acompañada de la leta a">
+    <header class="header shadow">
+        <div class="header-wrapper wrapper">
+            <a href="#welcome"> <img class="header__img" src="./img/icon.svg"
+                    alt="Logo de la marca enka creative, una luna acompañada de la leta a"></a>
 
-        <nav>
-            <ul class="header__nav">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="header__nav">
+                    <li><a class="scrolling-box" href="#profile">Profile</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <section class="welcome wrapper grid-top">
+    <section id="welcome" class="welcome wrapper grid-top">
         <aside class="welcome__name">
             <p>Enka Creative</p>
         </aside>
-        <div class="welcome__description">
+        <div class="img">
             <img src="./img/welcome-karen-mendez.svg" alt="">
         </div>
         <div class="welcome__share">
-            <a href="https://www.linkedin.com/in/enka/"> <img src="./img/icon-linkedin-in.svg" alt=""> </a>
-            <a href="https://github.com/Kajoha"> <img src="./img/icon-github.svg" alt="">
+            <a class="grow" href="https://www.linkedin.com/in/enka/"> <img src="./img/icon-linkedin-in.svg" alt=""> </a>
+            <a class="grow" href="https://github.com/Kajoha"> <img src="./img/icon-github.svg" alt="">
             </a>
-            <a href="https://www.behance.net/enkacreative"> <img src="./img/icon-behance.svg" alt=""> </a>
+            <a class="grow" href="https://www.behance.net/enkacreative"> <img src="./img/icon-behance.svg" alt=""> </a>
         </div>
 
     </section>
@@ -43,7 +46,7 @@
     <section class="givens wrapper grid-top">
 
         <div class="givens__item-a title__positions grid-top">
-            <h1> <span class="title__span">Latest events</span> Latest events</h1>
+            <h1> <span class="title__span">Last events</span> Last events</h1>
             <ul>
                 <li>Drupal camp Costa Rica 2020 - Technical staff</li>
                 <li>Startup Weeked Costa Rica 2019 - Pitcher</li>
@@ -60,8 +63,8 @@
 
     <section class="grid-top comments">
         <div class="comments__wrapper">
-
             <div class="wrapper display-col-row60 ">
+
                 <div class="comments__title">
                     <h1><span class="title__span">What clients
                             say about me</span> What clients
@@ -81,11 +84,102 @@
 
             </div>
         </div>
-
     </section>
+
+    <aside class="clear"></aside>
+
+    <section id="profile" class="profile wrapper display-col-row60">
+
+        <div class="profile__img">
+            <img class="grid-top" src="./img/profile-karen-mendez.svg" alt="">
+        </div>
+
+        <div class="profile__content">
+
+            <div class="profile__content--items">
+                <h1><span class="title__span">Academic profile</span>Academic profile</h1>
+                <ul>
+                    <li>
+                        <p class="content__title">CENTRO DE TECNOLOGÍA Y ARTES VISUALES - CETAV </p>
+                        <p>Studying: Web Design and Development Technician
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">INSTITUTO UNIVERSITARIO DE TECNOLOGÍA DE ADMINISTRACIÓN INDUSTRIAL</p>
+                        <p>Higher University
+                            Technician in Business Administration.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="profile__content--items grid-top">
+                <h1><span class="title__span">Work experience</span>Work experience</h1>
+                <ul>
+                    <li>
+                        <p class="content__title">ENKA CREATIVE</p>
+                        <p>Designer
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">CLARK CENTRAL AMERICA</p>
+                        <p>Digital Media Consultant
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">TUGA - DIGITAL DESIGN WORKSHOP</p>
+                        <p>Manageress
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">YUSO - MULTIDISCIPLINARY RESEARCH AND
+                            DEVELOPMENT STUDY</p>
+                        <p>Digital communication
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="profile__content--items grid-top">
+                <h1><span class="title__span">Others</span>Others</h1>
+                <ul>
+                    <li>
+                        <p class="content__title">Universidad CENFOTEC</p>
+                        <p>Scrum Master - Agile methodology
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title"> Fundación para el Desarrollo innovador de la ciencia y la tecnología
+                        </p>
+                        <p>Business management and
+                            optimization
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">NOSOTRAS WOMEN CONNECTING LEADERSHIP CAMP
+                            AND LABORATORY</p>
+                        <p>Executive creativity and pitch competition
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title"> Universidad La Salle</p>
+                        <p>Muralism-Grafitti Technique
+                        </p>
+                    </li>
+                    <li>
+                        <p class="content__title">Universidad de Palermo</p>
+                        <p>Diginomics: The impact of technology on business
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
-
-
 </body>
 
 </html>
