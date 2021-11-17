@@ -1,0 +1,114 @@
+.slider {
+    ul {
+        position:relative; 
+    }
+}
+.slider {
+
+    li {
+        opacity: 0;
+        background-image: url(./../../img/portafolio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: opacity .5s;
+        position: absolute; 
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+}
+
+ul.slider li:first-child {
+    opacity: 1; 
+}
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.slider__item {
+    padding-top: 10rem;
+    color: $white;
+    h3 {
+        display: inline-block;
+    }
+    i {
+        margin-left: 1rem;
+        color: $white;
+    }
+    i:hover {
+        color: $blue-secondary;
+    }
+
+    @media (min-width: 40rem) {
+        margin-left: 60%;
+    }
+  
+}
+
+.slider__item:hover {
+    color: $blue-secondary;
+}
+
+.work__slider {
+    display: flex;
+}
+
+.nav__slider {
+    padding-top: 25rem;
+    padding-left: 5rem;
+    align-self: flex-end;
+    position: absolute;
+    z-index: 9;
+
+    @media (min-width: 40rem) {
+        padding-top: 5rem;
+        padding-left: 20rem;
+    }
+}
+
+.nav__slider--menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    li {
+        background-color: $white;
+        border-radius: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        a {
+            padding: 2rem;
+        }
+    }
+
+    li:hover {
+        background-color: $blue-secondary;
+        width: 3rem;
+        border-radius: 20%;
+    }
+      
+}
+
+ul.nav__slider--menu li:first-child {
+    background-color: $blue-secondary;
+}
+
+
+.work {
+    justify-content: flex-start;
+}
+
+.work__title {
+    padding-top: 5rem;
+    width: 40%;
+    
+}
+
+.work__slider {
+    width: 60%;
+}

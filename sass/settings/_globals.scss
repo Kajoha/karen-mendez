@@ -8,17 +8,18 @@ a {
 
 body {
   margin: 0;
-  color: $black;
+  color: $white;
+  background-image: url("./../../img/backgroup.svg");
+  background-size: cover;
+
 }
 
 html {
   font-size: 10px;
   font-family: $main-typo;
-  color: $black;
   margin: 0;
   scroll-behavior: smooth;
-  background-image: url("./../../img/backgroup.svg");
-  background-size: cover;
+ background-color: $blue-main;
 }
 
 body::-webkit-scrollbar {
@@ -28,11 +29,13 @@ body::-webkit-scrollbar-track {
   background-color: $blue-secondary;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: $white;
+  background-color: $blue-main;
   border-radius: 1rem;
 }
 
 h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(104, 97, 97);
   font-size: $typo-l;
   @media (min-width: 60rem) {
     font-size: $typo-xxl;
@@ -66,13 +69,10 @@ p {
   }
 }
 
-li{
-  list-style: none;
-}
-
-ul {
+ul, li {
   margin: 0;
   padding: 0;
+  list-style: none inside;
 }
 
 .wrapper {
@@ -100,15 +100,22 @@ ul {
   }
 }
 
+.grid-top--sections {
+  margin-top: 5rem;
+  @media (min-width: 40rem) {
+    margin-top: 10rem;
+  }
+}
+
 .title__positions {
   position: relative;
 }
 
 .title__span {
-  color: transparent;
-  -webkit-text-stroke: 1px #000;
+  color: $white;
+  -webkit-text-stroke: 0px;
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   margin-top: 1rem;
   margin-left: 1.8rem;
   

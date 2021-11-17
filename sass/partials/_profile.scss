@@ -1,8 +1,9 @@
 .profile {
-    padding-top: 4rem;
+    padding-top: 30rem;
    @media (min-width: 40rem) {
         gap: 4rem;
         align-items: flex-start;
+        padding-top: 60rem;
     }
 }
 

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enka creative</title>
+
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="shortcut icon" href="img/icon.svg" />
-    <title>Enka creative</title>
+    <script src="https://kit.fontawesome.com/77fad71767.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,23 +30,35 @@
         </div>
     </header>
 
-    <section id="welcome" class="welcome wrapper grid-top">
-        <aside class="welcome__name">
-            <p>Enka Creative</p>
-        </aside>
-        <div class="img">
-            <img src="./img/welcome-karen-mendez.svg" alt="">
-        </div>
-        <div class="welcome__share">
-            <a class="grow" href="https://www.linkedin.com/in/enka/"> <img src="./img/icon-linkedin-in.svg" alt=""> </a>
-            <a class="grow" href="https://github.com/Kajoha"> <img src="./img/icon-github.svg" alt="">
-            </a>
-            <a class="grow" href="https://www.behance.net/enkacreative"> <img src="./img/icon-behance.svg" alt=""> </a>
-        </div>
+    <section id="welcome">
+        <div class="welcome wrapper grid-top">
 
+            <aside class="welcome__animation">
+                <div></div>
+            </aside>
+            <aside class="welcome__name">
+                <p>Enka Creative</p>
+            </aside>
+            <div class="img">
+                <p class="img__text">I'm Karen Méndez</p>
+                <img src="./img/welcome-karen-mendez.svg" alt="">
+            </div>
+
+            <div class="welcome__share">
+                <a class="grow" href="https://www.linkedin.com/in/enka/"><i
+                        class="fab fa-linkedin-in fa-2x"></i></i></a>
+                <a class="grow" href="https://github.com/Kajoha"><i class="fab fa-github fa-2x"></i></a>
+                <a class="grow" href="https://www.behance.net/enkacreative"><i class="fab fa-behance fa-2x"></i></a>
+            </div>
+
+        </div>
     </section>
 
-    <section class="givens wrapper grid-top">
+    <aside class="scroll">
+
+    </aside>
+
+    <section class="givens wrapper grid-top--sections">
 
         <div class="givens__item-a title__positions grid-top">
             <h1> <span class="title__span">Last events</span> Last events</h1>
@@ -55,13 +70,9 @@
             </ul>
         </div>
 
-        <div class="givens__item-b givens__positions grid-top">
-            <h1> <span class="title__span">My work in GitHub</span> My work in GitHub</h1>
-            <div class="js-github"></div>
-        </div>
     </section>
 
-    <section class="grid-top comments">
+    <section class="grid-top--sections comments">
         <div class="comments__wrapper">
             <div class="wrapper display-col-row60 ">
 
@@ -86,9 +97,55 @@
         </div>
     </section>
 
-    <aside class="clear"></aside>
+    <section id="work" class="work wrapper grid-top--sections display-col-row60">
 
-    <section id="profile" class="profile wrapper display-col-row60">
+        <div class="work__title">
+
+            <h1> <span class="title__span">My web <br> development <br> projects</span> My web <br>development <br>
+                projects</h1>
+
+            <div class="nav__slider">
+                <ul class="nav__slider--menu">
+                    <li class="shadow "><a href="#slide1"></a>
+                    </li>
+                    <li class="shadow "><a href="#slide2"></a>
+                    </li>
+                    <li class="shadow "><a href="#slide3"></a>
+                    </li>
+                    <li class="shadow "><a href="#slide4"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="work__slider">
+            <div>
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="./img/page-1.png" alt="">
+                        <a class="slider__item" href="https://kajoha.github.io/music-app/">
+                            <h3>Music Player<i class="fa fa-solid fa-arrow-right"></i></h3>
+                        </a>
+                    </li>
+                    <li id="slide2"> <img src="./img/page-2.png" alt=""> <a class="slider__item"
+                            href="vieyraurena.github.io/ecommerce-Bulu/">
+                            <h3>Ecommerce Bulu<i class="fa fa-solid fa-arrow-right"></i></h3>
+                        </a> </li>
+                    <li id="slide3"> <img src="./img/page-3.png" alt=""> <a class="slider__item"
+                            href="https://cetav-ddw.github.io/museos-llevar/">
+                            <h3>Museo para llevar<i class="fa fa-solid fa-arrow-right"></i></h3>
+                        </a> </li>
+                    <li id="slide4"> <img src="./img/page-4.png" alt=""> <a class="slider__item"
+                            href="https://kajoha.github.io/portfolio-kajoha-.github.io/">
+                            <h3>Karen Méndez<i class="fa fa-solid fa-arrow-right"></i></h3>
+                        </a> </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="profile wrapper display-col-row60">
 
         <div class="profile__img">
             <img class="grid-top" src="./img/profile-karen-mendez.svg" alt="">
@@ -96,7 +153,7 @@
 
         <div class="profile__content">
 
-            <div class="profile__content--items">
+            <div id="profile" class="profile__content--items">
                 <h1><span class="title__span">Academic profile</span>Academic profile</h1>
                 <ul>
                     <li>
@@ -179,7 +236,6 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
 </body>
 
 </html>

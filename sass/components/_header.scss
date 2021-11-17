@@ -1,5 +1,5 @@
 .header {
-  background-color: $white;
+  background-color: $blue-main;
   position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
   }
   
   a {
-    color: $black;
+    color: $white;
     font-weight: 600;
     padding: .5rem .8rem;
     text-transform: uppercase;
@@ -87,6 +87,6 @@
   }
       
   a:hover {
-    color: #0e967f;
+    color: $blue-hover;
   }
 }
