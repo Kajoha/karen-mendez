@@ -470,11 +470,11 @@ ul.nav__slider--menu li:first-child {
   margin-top: 1.5rem; }
 
 .form__content--input input, .form__content--input textarea {
-  color: #dfd7d7;
   background-color: #081329;
   border-radius: .5rem;
   border: 0;
   outline: 0;
+  color: #dfd7d7;
   padding: 1rem;
   resize: none;
   width: 60%; }
@@ -488,16 +488,16 @@ ul.nav__slider--menu li:first-child {
   font-size: 1.4rem; }
 
 .form__content--submit {
-  border: none;
   border-radius: .8rem;
+  border: none;
   box-shadow: 0px 4px 4px rgba(48, 45, 45, 0.25);
   cursor: pointer;
   font-weight: 900;
+  margin-left: 45%;
   margin-top: 1.5rem;
   padding: 1rem;
   text-transform: uppercase;
-  width: 30%;
-  margin-left: 45%; }
+  width: 30%; }
   @media (min-width: 50rem) {
     .form__content--submit {
       width: 20%; } }
@@ -505,3 +505,17 @@ ul.nav__slider--menu li:first-child {
 @media (min-width: 40rem) {
   .form__title {
     width: 50%; } }
+
+.footer {
+  justify-content: flex-end;
+  gap: 4rem; }
+
+.footer__share {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; }
+  .footer__share i {
+    color: #dfd7d7; }
+  .footer__share i:hover {
+    color: #0e967f; }
