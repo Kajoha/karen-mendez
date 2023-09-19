@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
 a {
   text-decoration: none;
   font-size: 1.2rem; }
@@ -15,10 +15,10 @@ body {
 
 html {
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: #081329; }
+  background-color: #060607; }
 
 body::-webkit-scrollbar {
   width: .7rem; }
@@ -29,4 +29,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #081329;
   border-radius: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dosis', sans-serif;
+}
 
